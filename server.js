@@ -20,8 +20,9 @@ const app = express();
 app.use(cors({
   origin: [
     process.env.FRONTEND_URL,
-    'http://localhost:3000',  // for local testing
-    'http://127.0.0.1:5500'  // for VS Code Live Server
+    'https://shreyamenon2024-ui.github.io',
+    'http://localhost:3000',
+    'http://127.0.0.1:5500'
   ],
   methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
